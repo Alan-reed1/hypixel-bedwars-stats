@@ -2,7 +2,7 @@ import requests
 import mcuuid
 
 def get_stats(name, mode):
-    api_key = ""
+    api_key = input("Please enter your API key here: ).strip()
     player = mcuuid.MCUUID(name=name)
     uuid = player.uuid
     uri = "https://api.hypixel.net/player?key={}&uuid={}"
